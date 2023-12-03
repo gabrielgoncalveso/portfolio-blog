@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ptBR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+
+  <!-- TODO:
+  - [ ] Adicionar favicon
+  - [ ] Trabalhar em responsividade
+  - [ ] Adicionar carrosel / seção com técnologias que trabalho
+  - [ ] Adicionar links para redes sociais
+  -->
+
+  <body>
+    <header class="flex flex-row justify-between">
+      <div>Logo</div>
+
+      <nav class="w-full">
+        <ul class="flex flex-row justify-end gap-4 pr-2">
+          <li>
+            <a href="#">Inicio</a>
+          </li>
+          <li>
+            <a href="#">Sobre</a>
+          </li>
+          <li>
+            <a href="#">Contato</a>
+          </li>
+          <li>
+            <a href="#">Blog</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="flex flex-col">
+      <section class="h-screen flex items-center p-10">
+        <div class="flex flex-row justify-between">
+          <div class="flex flex-col justify-center">
+            <h1 class="title">Gabriel Gonçalves de Oliveira</h1>
+
+            <p>
+              Desenvolvedor Full Stack, formado em Análise e Desenvolvimento de
+              Sistemas pela Fatec Americana e cursando MBA em Engenharia de
+              Software pela Esalq/USP.
+            </p>
+          </div>
+          <div class="w-full flex justify-center">
+            <img
+              class="img-container"
+              src="https://avatars.githubusercontent.com/u/79107436?v=4"
+              alt="Foto de perfil de Gabriel Gonçalves de Oliveira"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="h-screen flex flex-col items-center p-10">
+        <h2 class="">Técnologias</h2>
+        <div class="w-full flex flex-row">
+          <div class="w-full flex flex-col">
+            <h3>Front-end</h3>
+            <ul class="flex flex-col gap-2">
+              <li>
+                <!-- Lil icon -->
+                <div class="flex items-center gap-2">
+                  <img
+                    src="assets/language-logos/html5.png"
+                    alt="HTML 5 Logo"
+                    width="25px"
+                  />
+                  HTML
+                </div>
+              </li>
+              <li>
+                <div class="flex items-center gap-2">
+                  <img
+                    src="assets/language-logos/css3.png"
+                    alt="CSS 3 Logo"
+                    width="25px"
+                  />
+                  CSS
+                </div>
+              </li>
+              <li>
+                <div class="flex items-center gap-2">
+                  <img
+                    src="assets/language-logos/js.png"
+                    alt="JavaScript Logo"
+                    width="25px"
+                  />
+                  JavaScript
+                </div>
+              </li>
+              <li>
+                <div class="flex items-center gap-2">
+                  <img
+                    src="assets/language-logos/react.png"
+                    alt="React Logo"
+                    width="25px"
+                  />
+                  React
+                </div>
+              </li>
+              <li>
+                <div class="flex items-center gap-2">
+                  <img
+                    src="assets/language-logos/vue.png"
+                    alt="Vue Logo"
+                    width="25px"
+                  />
+                  Vue
+                </div>
+              </li>
+              <li>
+                <div class="flex items-center gap-2">
+                  <img
+                    src="assets/language-logos/flutter.png"
+                    alt="Flutter Logo"
+                    width="25px"
+                  />
+                  Flutter
+                </div>
+              </li>
+              <li>
+                <div class="flex items-center gap-2">
+                  <img
+                    src="assets/language-logos/tailwind.png"
+                    alt="Tailwind CSS Logo"
+                    width="25px"
+                  />
+                  Tailwind CSS
+                </div>
+              </li>
+
+              <li>
+                <div class="flex items-center gap-2">
+                  <img
+                    src="assets/language-logos/bootstrap.png"
+                    alt="Bootstrap CSS Logo"
+                    width="25px"
+                  />
+                  Bootstrap
+                </div>
+              </li>
+              <li>
+                <div class="flex items-center gap-2">
+                  <img
+                    src="assets/language-logos/lume.svg"
+                    alt="Tailwind CSS Logo"
+                    width="25px"
+                  />
+                  Lume
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="w-full flex flex-col">
+            <h3>Back-end</h3>
+            <ul class="flex flex-col gap-2">
+              <li>
+                <div class="flex items-center gap-2">
+                  <img
+                    src="assets/language-logos/java.png"
+                    alt="Java Logo"
+                    width="25px"
+                  />
+                  Java
+                </div>
+              </li>
+              <li>
+                <div class="flex items-center gap-2">
+                  <img
+                    src="assets/language-logos/spring.png"
+                    alt="Springboot Logo"
+                    width="25px"
+                  />
+                  Springboot
+                </div>
+              </li>
+              <li>
+                <div class="flex items-center gap-2">
+                  <img
+                    src="assets/language-logos/elixir.png"
+                    alt="Elixir Logo"
+                    width="25px"
+                  />
+                  Elixir
+                </div>
+              </li>
+              <li>
+                <div class="flex items-center gap-2">
+                  <img
+                    src="assets/language-logos/python.png"
+                    alt="Python Logo"
+                    width="25px"
+                  />
+                  Python
+                </div>
+              </li>
+              <li>
+                <div class="flex items-center gap-2">
+                  <img
+                    src="assets/language-logos/node.png"
+                    alt="Node.js Logo"
+                    width="25px"
+                  />
+                  Node.js
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="w-full flex flex-col">
+            <h3>Infra</h3>
+            <ul class="flex flex-col gap-2">
+              <li>
+                <div class="flex items-center gap-2">
+                  <img
+                    src="assets/language-logos/mysql.png"
+                    alt="MySQL Logo"
+                    width="25px"
+                  />
+                  MySQL
+                </div>
+              </li>
+              <li>
+                <div class="flex items-center gap-2">
+                  <img
+                    src="assets/language-logos/docker.png"
+                    alt="Docker Logo"
+                    width="25px"
+                  />
+                  Docker
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="flex flex-row justify-center">
+      Made by&nbsp;
+      <a href="https://github.com/gabrielgoncalveso">@gabrielgoncalveso</a>
+    </footer>
+  </body>
+</html>
