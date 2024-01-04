@@ -13,9 +13,9 @@
   src: url("/styles/fonts/Roboto-Regular.ttf");
 }
 
-header {
+/* header {
   height: 30px;
-}
+} */
 
 h1 {
   font-family: "Nova Square";
