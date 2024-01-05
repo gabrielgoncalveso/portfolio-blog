@@ -36,6 +36,12 @@ h3 {
   margin: 1rem 0;
 }
 
+h4 {
+  font-family: "Nova Square";
+  font-size: 1.2rem !important;
+  margin: 1rem 0;
+}
+
 p {
   font-family: "Roboto";
   font-size: 1rem !important;
@@ -72,9 +78,9 @@ nav {
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 
-#init {
+/* #init {
   padding-top: 65px;
-}
+} */
 
 #about {
   padding-top: 65px;
