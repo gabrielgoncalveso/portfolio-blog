@@ -25,7 +25,7 @@
         />
       </div>
       <nav class="w-full">
-        <ul class="flex flex-row justify-end gap-4 pr-2 h-full">
+        <ul class="hidden sm:flex flex-row justify-end gap-4 pr-2 h-full">
           <li
             class="flex flex-col justify-center h-full header-menu-item cursor-pointer"
             id="button-init"
@@ -60,11 +60,15 @@
             <a>Blog</a>
           </li> -->
         </ul>
+
+        <!-- TODO: ADD SANDWICH BUTTON-->
       </nav>
     </header>
     <main class="flex flex-col">
       <section id="init" class="h-screen flex items-center p-10">
-        <div class="flex flex-row justify-between">
+        <div
+          class="flex flex-row justify-between flex-wrap-reverse sm:flex-nowrap"
+        >
           <div class="flex flex-col justify-center">
             <h1 class="title">Gabriel Gonçalves de Oliveira</h1>
 
@@ -76,7 +80,7 @@
           </div>
           <div class="w-full flex justify-center">
             <img
-              class="img-container"
+              class="img-container w-1/2 sm:w-auto"
               src="https://avatars.githubusercontent.com/u/79107436?v=4"
               alt="Foto de perfil de Gabriel Gonçalves de Oliveira"
             />
@@ -88,8 +92,8 @@
         id="about"
       >
         <h2>Sobre</h2>
-        <div class="flex flex-row w-full justify-between gap-10">
-          <div class="flex-1 text-justify">
+        <div class="flex-wrap flex flex-row w-full justify-between gap-10">
+          <div class="sm:flex-1 text-justify">
             <h3>Quem sou eu?</h3>
             Me chamo Gabriel Gonçalves de Oliveira e atualmente trabalho como um
             desenvolvedor Full-Stack na empresa Qyon Tecnologia. Meu primeiro
@@ -103,8 +107,8 @@
             onde sou efetivado hoje. Atualmente estou cursando MBA em Engenharia
             de Software pela Esalq/USP.
           </div>
-          <div class="flex h-full bg-gray-300 min-w-1"></div>
-          <div class="flex-1 text-justify">
+          <div class="hidden sm:flex h-full bg-gray-300 min-w-1"></div>
+          <div class="sm:flex-1 text-justify">
             <h3>Experiências</h3>
             <ul class="flex flex-col gap-2">
               <li>
