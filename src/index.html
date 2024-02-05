@@ -65,7 +65,10 @@
       </nav>
     </header>
     <main class="flex flex-col">
-      <section id="init" class="h-screen flex items-center p-10">
+      <section
+        id="init"
+        class="sm:h-screen w-full flex flex-col items-center p-10"
+      >
         <div
           class="flex flex-row justify-between flex-wrap-reverse sm:flex-nowrap"
         >
@@ -80,7 +83,7 @@
           </div>
           <div class="w-full flex justify-center">
             <img
-              class="img-container w-1/2 sm:w-auto"
+              class="img-container w-1/2 sm:w-2/3"
               src="https://avatars.githubusercontent.com/u/79107436?v=4"
               alt="Foto de perfil de Gabriel Gonçalves de Oliveira"
             />
@@ -88,7 +91,7 @@
         </div>
       </section>
       <section
-        class="h-screen flex flex-col items-center p-10 mt-65"
+        class="sm:h-screen flex flex-col items-center p-10 mt-65"
         id="about"
       >
         <h2>Sobre</h2>
@@ -138,12 +141,12 @@
         </div>
       </section>
       <section
-        class="h-screen flex flex-col items-center p-10 mt-2.5"
+        class="sm:h-screen flex flex-col items-center p-10 mt-2.5"
         id="technologies"
       >
         <h2>Técnologias</h2>
-        <div class="w-full flex flex-row">
-          <div class="w-full flex flex-col">
+        <div class="w-full flex flex-row flex-wrap gap-10">
+          <div class="w-full flex-1 flex-col">
             <h3>Front-end</h3>
             <ul class="flex flex-col gap-2 border-l-4 border-indigo-300 pl-3">
               <li>
@@ -239,7 +242,7 @@
               </li>
             </ul>
           </div>
-          <div class="w-full flex flex-col">
+          <div class="w-full flex sm:flex-1 flex-col">
             <h3>Back-end</h3>
             <ul class="flex flex-col gap-2 pl-3 border-l-4 border-indigo-300">
               <li>
@@ -294,7 +297,7 @@
               </li>
             </ul>
           </div>
-          <div class="w-full flex flex-col">
+          <div class="w-full flex sm:flex-1 flex-col">
             <h3>Infra</h3>
             <ul class="flex flex-col gap-2 pl-3 border-l-4 border-indigo-300">
               <li>
@@ -322,11 +325,13 @@
         </div>
       </section>
       <section
-        class="h-screen flex flex-col items-center p-10 mt-2.5"
+        class="sm:h-screen flex flex-col items-center p-10 mt-2.5"
         id="contact"
       >
         <h2>Contatos</h2>
-        <div class="flex justify-evenly items-center flex-grow w-full gap-10">
+        <div
+          class="flex justify-evenly items-center flex-grow w-full gap-5 flex-wrap"
+        >
           <a
             class="contact-link flex-1"
             target="_blank"
