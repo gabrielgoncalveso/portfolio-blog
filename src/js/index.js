@@ -8,7 +8,7 @@ buttonInit.addEventListener("click", () => {
 const mobileButtonInit = document.getElementById("mobile-button-init");
 
 buttonInit.addEventListener("click", () => {
-  init.scrollIntoView({ behavior: "smooth" });
+  scroll({ top: 0, behavior: "smooth" });
 });
 mobileButtonInit.addEventListener("click", () => {
   scroll({ top: 0, behavior: "smooth" });
