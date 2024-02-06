@@ -16,6 +16,52 @@
   -->
 
   <body>
+    <div
+      id="menu-mobile"
+      class="hidden h-screen h-width bg-black sticky top-0 left-0 z-50 text-white p-5"
+    >
+      <div class="flex justify-end">
+        <button id="sandwich-close-button">
+          <img src="assets/icons/x-solid.svg" alt="Sandwich Menu" width="30" />
+        </button>
+      </div>
+
+      <ul class="flex flex-col items-center pr-5 pb-24 h-full">
+        <li
+          class="flex flex-row h-full justify-center items-center header-menu-item cursor-pointer"
+          id="mobile-button-init"
+        >
+          <a>Inicio</a>
+        </li>
+        <li
+          class="flex flex-row h-full justify-center items-center header-menu-item cursor-pointer"
+          id="mobile-button-about"
+        >
+          <a> Sobre </a>
+        </li>
+
+        <li
+          class="flex flex-row h-full justify-center items-center header-menu-item cursor-pointer"
+          id="mobile-button-technologies"
+        >
+          <a> Técnologias </a>
+        </li>
+        <li
+          class="flex flex-row h-full justify-center items-center header-menu-item cursor-pointer"
+          id="mobile-button-contact"
+        >
+          <a> Contato </a>
+        </li>
+
+        <!-- TODO: WHEN BLOG IS READY, REDIRECT TO BLOG -->
+        <!-- <li
+        class="flex flex-col justify-center h-full header-menu-item cursor-pointer"
+        id="button-blog"
+      >
+        <a>Blog</a>
+      </li> -->
+      </ul>
+    </div>
     <header class="sticky top-0 flex flex-row justify-between bg-white">
       <div class="p-2">
         <img
@@ -61,7 +107,7 @@
           </li> -->
         </ul>
         <div class="sm:hidden flex flex-row justify-end gap-4 pr-5 h-full">
-          <button id="sandwich-button" onclick="toggleSandwichMenu()">
+          <button id="sandwich-open-button">
             <img
               id="sandwich-menu-icon"
               src="assets/icons/bars-solid.svg"
@@ -70,10 +116,9 @@
             />
           </button>
         </div>
-
-        <!-- TODO: ADD SANDWICH BUTTON-->
       </nav>
     </header>
+
     <main class="flex flex-col">
       <section
         id="init"
@@ -109,7 +154,7 @@
         </div>
       </section>
       <section
-        class="sm:h-screen flex flex-col items-center p-10 mt-65"
+        class="sm:h-screen flex flex-col items-center p-10 mt-10"
         id="about"
       >
         <h2>Sobre</h2>
