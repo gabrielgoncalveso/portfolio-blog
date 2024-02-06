@@ -9,6 +9,7 @@ const site = lume({
 site.copy("index.html");
 site.copy("404.html");
 site.copy("styles", "styles");
+site.copy("js", "js");
 site.copy("assets", "assets");
 
 export default site;

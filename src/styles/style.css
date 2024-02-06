@@ -13,9 +13,9 @@
   src: url("/styles/fonts/Roboto-Regular.ttf");
 }
 
-header {
+/* header {
   height: 30px;
-}
+} */
 
 h1 {
   font-family: "Nova Square";
@@ -36,6 +36,12 @@ h3 {
   margin: 1rem 0;
 }
 
+h4 {
+  font-family: "Nova Square";
+  font-size: 1.2rem !important;
+  margin: 1rem 0;
+}
+
 p {
   font-family: "Roboto";
   font-size: 1rem !important;
@@ -51,4 +57,38 @@ nav {
   border-radius: 50%;
   border: 3px solid #fff;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.header-menu-item:hover {
+  color: rgb(79 70 229);
+  border-bottom: 1px solid rgb(79 70 229);
+  transition: 0.6s;
+}
+
+.contact-link {
+  padding: 20px;
+  /* border: 1px solid rgba(0, 0, 0, 0.3); */
+  border-radius: 20px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-link:hover {
+  color: rgb(79 70 229);
+  transition: 0.6s;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* #init {
+  padding-top: 65px;
+} */
+
+#about {
+  padding-top: 65px;
+}
+#technologies {
+  padding-top: 65px;
+}
+
+#contact {
+  padding-top: 65px;
 }

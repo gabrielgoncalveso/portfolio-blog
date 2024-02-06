@@ -11,34 +11,122 @@
   - [ ] Adicionar favicon
   - [ ] Trabalhar em responsividade
   - [x] Adicionar carrosel / seção com técnologias que trabalho
-  - [ ] Adicionar links para redes sociais
+  - [x] Adicionar links para redes sociais
   - [ ] Adicionar tradução para inglês
   -->
 
   <body>
-    <header class="flex flex-row justify-between">
-      <div>Logo</div>
+    <div
+      id="menu-mobile"
+      class="hidden h-screen h-width bg-black sticky top-0 left-0 z-50 text-white p-5"
+    >
+      <div class="flex justify-end">
+        <button id="sandwich-close-button">
+          <img src="assets/icons/x-solid.svg" alt="Sandwich Menu" width="30" />
+        </button>
+      </div>
 
+      <ul class="flex flex-col items-center pr-5 pb-24 h-full">
+        <li
+          class="flex flex-row h-full justify-center items-center header-menu-item cursor-pointer"
+          id="mobile-button-init"
+        >
+          <a>Inicio</a>
+        </li>
+        <li
+          class="flex flex-row h-full justify-center items-center header-menu-item cursor-pointer"
+          id="mobile-button-about"
+        >
+          <a> Sobre </a>
+        </li>
+
+        <li
+          class="flex flex-row h-full justify-center items-center header-menu-item cursor-pointer"
+          id="mobile-button-technologies"
+        >
+          <a> Técnologias </a>
+        </li>
+        <li
+          class="flex flex-row h-full justify-center items-center header-menu-item cursor-pointer"
+          id="mobile-button-contact"
+        >
+          <a> Contato </a>
+        </li>
+
+        <!-- TODO: WHEN BLOG IS READY, REDIRECT TO BLOG -->
+        <!-- <li
+        class="flex flex-col justify-center h-full header-menu-item cursor-pointer"
+        id="button-blog"
+      >
+        <a>Blog</a>
+      </li> -->
+      </ul>
+    </div>
+    <header class="sticky top-0 flex flex-row justify-between bg-white">
+      <div class="p-2">
+        <img
+          src="assets/personal-logos/simplified-logo.png"
+          alt="Logo"
+          width="45"
+        />
+      </div>
       <nav class="w-full">
-        <ul class="flex flex-row justify-end gap-4 pr-2">
-          <li>
-            <a href="#">Inicio</a>
+        <ul class="hidden sm:flex flex-row justify-end gap-4 pr-5 h-full">
+          <li
+            class="flex flex-col justify-center h-full header-menu-item cursor-pointer"
+            id="button-init"
+          >
+            <a>Inicio</a>
           </li>
-          <li>
-            <a href="#">Sobre</a>
+          <li
+            class="flex flex-col justify-center h-full header-menu-item cursor-pointer"
+            id="button-about"
+          >
+            <a> Sobre </a>
           </li>
-          <li>
-            <a href="#">Contato</a>
+
+          <li
+            class="flex flex-col justify-center h-full header-menu-item cursor-pointer"
+            id="button-technologies"
+          >
+            <a> Técnologias </a>
           </li>
-          <li>
-            <a href="#">Blog</a>
+          <li
+            class="flex flex-col justify-center h-full header-menu-item cursor-pointer"
+            id="button-contact"
+          >
+            <a> Contato </a>
           </li>
+
+          <!-- TODO: WHEN BLOG IS READY, REDIRECT TO BLOG -->
+          <!-- <li
+            class="flex flex-col justify-center h-full header-menu-item cursor-pointer"
+            id="button-blog"
+          >
+            <a>Blog</a>
+          </li> -->
         </ul>
+        <div class="sm:hidden flex flex-row justify-end gap-4 pr-5 h-full">
+          <button id="sandwich-open-button">
+            <img
+              id="sandwich-menu-icon"
+              src="assets/icons/bars-solid.svg"
+              alt="Sandwich Menu"
+              width="30"
+            />
+          </button>
+        </div>
       </nav>
     </header>
+
     <main class="flex flex-col">
-      <section class="h-screen flex items-center p-10">
-        <div class="flex flex-row justify-between">
+      <section
+        id="init"
+        class="sm:h-screen w-full flex flex-col items-center p-10"
+      >
+        <div
+          class="flex flex-row justify-between flex-wrap-reverse sm:flex-nowrap"
+        >
           <div class="flex flex-col justify-center">
             <h1 class="title">Gabriel Gonçalves de Oliveira</h1>
 
@@ -47,20 +135,81 @@
               Sistemas pela Fatec Americana e cursando MBA em Engenharia de
               Software pela Esalq/USP.
             </p>
+
+            <div class="flex justify-center mt-10">
+              <img
+                src="assets/personal-logos/colored-logo.png"
+                alt="Logo"
+                width="180px"
+              />
+            </div>
           </div>
           <div class="w-full flex justify-center">
             <img
-              class="img-container"
+              class="img-container w-1/2 sm:w-2/3"
               src="https://avatars.githubusercontent.com/u/79107436?v=4"
               alt="Foto de perfil de Gabriel Gonçalves de Oliveira"
             />
           </div>
         </div>
       </section>
-      <section class="h-screen flex flex-col items-center p-10">
-        <h2 class="">Técnologias</h2>
-        <div class="w-full flex flex-row">
-          <div class="w-full flex flex-col">
+      <section
+        class="sm:h-screen flex flex-col items-center p-10 mt-10"
+        id="about"
+      >
+        <h2>Sobre</h2>
+        <div class="flex-wrap flex flex-row w-full justify-between gap-10">
+          <div class="sm:flex-1 text-justify">
+            <h3>Quem sou eu?</h3>
+            Me chamo Gabriel Gonçalves de Oliveira e atualmente trabalho como um
+            desenvolvedor Full-Stack na empresa Qyon Tecnologia. Meu primeiro
+            contato com a área de tecnologia foi quando ingressei no curso
+            Técnico em Tecnologia da Informação disponibilizado pelo Senai
+            "Álvares Romi", onde me apaixonei pela área.
+            <br />
+            Assim que conclui o curso Técnico, ingressei na Fatec Americana para
+            cursar Análise e Desenvolvimento de Sistemas, onde me formei em 2021
+            e também onde obtive a oportunidade de estagiar na empresa Qyon,
+            onde sou efetivado hoje. Atualmente estou cursando MBA em Engenharia
+            de Software pela Esalq/USP.
+          </div>
+          <div class="hidden sm:flex h-full bg-gray-300 min-w-1"></div>
+          <div class="sm:flex-1 text-justify">
+            <h3>Experiências</h3>
+            <ul class="flex flex-col gap-2">
+              <li>
+                <div class="flex flex-col">
+                  <h4>Qyon Tecnologia</h4>
+                  <p>
+                    Estágiário na área de desenvolvimento de sistemas,
+                    trabalhando com desenvolvimento backend em Java e Springboot
+                    além de manutenção e desenvolvimento frontend em Vue e
+                    Flutter
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="flex flex-col">
+                  <h4>Qyon Tecnologia</h4>
+                  <p>
+                    Desenvolvedor Full-Stack, trabalhando na manutenção e
+                    desenvolvimento backend em Java e Springboot, junto de
+                    Elixir e Python utilizando o framework Flask. Além do
+                    desenvolvimento frontend em Vue, Flutter e React
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section
+        class="sm:h-screen flex flex-col items-center p-10 mt-2.5"
+        id="technologies"
+      >
+        <h2>Técnologias</h2>
+        <div class="w-full flex flex-row flex-wrap gap-10">
+          <div class="w-full flex-1 flex-col">
             <h3>Front-end</h3>
             <ul class="flex flex-col gap-2 border-l-4 border-indigo-300 pl-3">
               <li>
@@ -134,7 +283,6 @@
                   Tailwind CSS
                 </div>
               </li>
-
               <li>
                 <div class="flex items-center gap-2">
                   <img
@@ -157,7 +305,7 @@
               </li>
             </ul>
           </div>
-          <div class="w-full flex flex-col">
+          <div class="w-full flex sm:flex-1 flex-col">
             <h3>Back-end</h3>
             <ul class="flex flex-col gap-2 pl-3 border-l-4 border-indigo-300">
               <li>
@@ -212,7 +360,7 @@
               </li>
             </ul>
           </div>
-          <div class="w-full flex flex-col">
+          <div class="w-full flex sm:flex-1 flex-col">
             <h3>Infra</h3>
             <ul class="flex flex-col gap-2 pl-3 border-l-4 border-indigo-300">
               <li>
@@ -239,10 +387,68 @@
           </div>
         </div>
       </section>
+      <section
+        class="sm:h-screen flex flex-col items-center p-10 mt-2.5"
+        id="contact"
+      >
+        <h2>Contatos</h2>
+        <div
+          class="flex justify-evenly items-center flex-grow w-full gap-5 flex-wrap"
+        >
+          <a
+            class="contact-link flex-1"
+            target="_blank"
+            href="https://github.com/gabrielgoncalveso"
+          >
+            <div class="flex flex-col items-center">
+              <img width="150px" src="assets/contact-logos/github.png" />
+              <h3>Github</h3>
+              <h4>@gabrielgoncalveso</h4>
+            </div>
+          </a>
+          <a
+            class="contact-link flex-1"
+            target="_blank"
+            href="https://www.linkedin.com/in/gabriel-gon%C3%A7alves-de-oliveira-274784200"
+          >
+            <div class="flex flex-col items-center">
+              <img width="150px" src="assets/contact-logos/linkedin.png" />
+              <h3>LinkedIn</h3>
+              <h4>Gabriel Gonçalves de Oliveira</h4>
+            </div>
+          </a>
+
+          <a
+            class="contact-link flex-1"
+            target="_blank"
+            href="mailto:gabgoncalveso@gmail.com"
+          >
+            <div class="flex flex-col items-center">
+              <img width="150px" src="assets/contact-logos/email.png" />
+              <h3>Email</h3>
+              <h4>gabgoncalveso@gmail.com</h4>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="flex flex-col items-center p-10 mt-2.5">
+        <img
+          src="assets/personal-logos/colored-logo.png"
+          alt="Logo"
+          width="100px"
+        />
+      </section>
     </main>
-    <footer class="flex flex-row justify-center">
-      Made by&nbsp;
-      <a href="https://github.com/gabrielgoncalveso">@gabrielgoncalveso</a>
+
+    <footer class="flex flex-col items-center bg-black text-white p-2">
+      <div>Gloria In Excelsis Deo</div>
+      <div>
+        Made by&nbsp;
+        <a href="https://github.com/gabrielgoncalveso">@gabrielgoncalveso</a>
+      </div>
     </footer>
+
+    <script src="js/index.js"></script>
   </body>
 </html>
